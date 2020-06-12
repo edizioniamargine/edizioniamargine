@@ -3,12 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   color: #707070;
+  font-family: "Mabry Pro";
+  font-size: 2.3vh;
 }
 
 
 @font-face {
   font-family: "Mabry Pro";
-  src: url("../resources/font/MabryPro-Regular.otf") format("otf");
+  src: url("../resources/font/MabryPro-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Mabry Pro M";
+  src: url("../resources/font/MabryPro-Medium.otf") format("opentype");
 }
 
 body{
@@ -21,14 +28,50 @@ body{
 }
 
 h1{
-    font-family: "Mabry Pro";
-    font-weight: bold;
+    font-family: "Mabry Pro M";
+    font-weight: normal;
+    margin-bottom: 9.7vh;
     font-size: 4vh;
 }
 
+h2{
+  font-family: "Mabry Pro";
+  font-weight: normal;
+  margin-bottom: 4vh;
+  font-size: 2.6vh;
+  cursor: pointer;
+  width: 20vh;
+}
+
 #column1{
+  position: relative;
   width: 30%;
   height: 73.18vh;
+}
+
+.menuvoice{
+  margin-bottom: 2.6vh;
+  height: 2.6vh;
+  overflow: hidden;
+}
+
+.menuvoice.open{
+    height: auto;
+}
+
+.menuvoice h2:hover{
+ color: #989898;
+}
+
+.menuvoice li{
+  list-style: none;
+  padding: 0 0 2vh 2.6vh ;
+}
+
+a{
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
 }
 
 #column2{
