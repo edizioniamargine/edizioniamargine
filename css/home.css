@@ -1,0 +1,42 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #707070;
+}
+
+
+@font-face {
+  font-family: "Mabry Pro";
+  src: url("../resources/font/MabryPro-Regular.otf") format("otf");
+}
+
+body{
+  overflow: hidden;
+  height: 100%;
+  width: auto;
+  padding: 17.07vh 5vw 9.75vh 5vw;
+  display: flex;
+  flex-direction: row;
+}
+
+h1{
+    font-family: "Mabry Pro";
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+#column1{
+  width: 30%;
+  height: 73.18vh;
+}
+
+#column2{
+  background-color: red;
+  width: 70%;
+  height: 73.18vh;
+}
+
+#column2 img{
+  height: 100%;
+}
