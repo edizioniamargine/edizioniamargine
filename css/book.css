@@ -79,16 +79,6 @@ h2{
   border-bottom: .2vh solid rgba(112,112,112, 0);
 }
 
-a{
-  text-decoration: none;
-}
-
-#about:hover,
-.menuvoice a:hover,
-h2:hover{
-  border-color: rgba(112,112,112, 1);
-}
-
 .menuvoice a:last-child{
   margin-bottom: 1vh;
 }
@@ -102,7 +92,15 @@ h2:hover{
   border-bottom: .2vh solid rgba(112,112,112, 0);
 }
 
+a{
+  text-decoration: none;
+}
 
+#about:hover,
+.menuvoice a:hover,
+h2:hover{
+  border-color: rgba(112,112,112, 1);
+}
 
 #column2{
   width: 70%;
