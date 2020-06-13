@@ -3,9 +3,9 @@
 function myFunction(element) {
   var elements = ".menuvoice";
   if ($(element).hasClass("open")){
-    $(element).toggleClass("open");
+    $(element).removeClass("open", 800);
   } else{
-    $(elements).removeClass('open');
-    $(element).toggleClass("open");
+    $(elements).removeClass("open", 800);
+    $(element).addClass("open", 800);
   };
 }

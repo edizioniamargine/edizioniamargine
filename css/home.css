@@ -51,35 +51,41 @@ h2{
 
 .menuvoice{
   margin-bottom: 2.6vh;
-  height: 2.6vh;
+  max-height: 2.6vh;
   overflow: hidden;
 }
 
 .menuvoice.open{
-    height: auto;
+    max-height: 100vh;
 }
 
 .menuvoice h2:hover{
- color: #989898;
+  
 }
 
 .menuvoice li{
+  cursor: pointer;
+  list-style: none;
+  padding: 0 0 2vh 2.6vh ;
+}
+
+.menuvoice li:hover{
+  cursor: pointer;
   list-style: none;
   padding: 0 0 2vh 2.6vh ;
 }
 
 a{
   position: absolute;
-  bottom: 0;
+  bottom: 4.9vh;
   text-decoration: none;
 }
 
 #column2{
-  background-color: red;
   width: 70%;
   height: 73.18vh;
-}
-
-#column2 img{
-  height: 100%;
+  background-image: url("../resources/media/covers/cover1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
 }
