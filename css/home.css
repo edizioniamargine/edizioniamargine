@@ -34,51 +34,75 @@ h1{
     font-size: 4vh;
 }
 
-h2{
-  font-family: "Mabry Pro";
-  font-weight: normal;
-  margin-bottom: 4vh;
-  font-size: 2.6vh;
-  cursor: pointer;
-  width: 20vh;
+.clr{
+  clear: both;
 }
 
 #column1{
-  position: relative;
   width: 30%;
   height: 73.18vh;
+  position: relative;
 }
 
 .menuvoice{
-  margin-bottom: 2.6vh;
-  max-height: 2.6vh;
+  cursor: pointer;
+  margin-bottom: 3vh;
+  max-height: 3.5vh;
   overflow: hidden;
+  position: relative;
 }
 
 .menuvoice.open{
     max-height: 100vh;
 }
 
-.menuvoice h2:hover{
-  
+h2{
+  transition: border-color .2s;
+  font-family: "Mabry Pro";
+  font-weight: normal;
+  margin-bottom: 3.8vh;
+  font-size: 2.6vh;
+  cursor: pointer;
+  float: left;
+  padding-bottom: .2vh;
+  border-bottom: .2vh solid rgba(112,112,112, 0);
+}
+
+h2:hover{
+  border-color: rgba(112,112,112, 1);
 }
 
 .menuvoice li{
+  transition: border-color .2s;
   cursor: pointer;
   list-style: none;
-  padding: 0 0 2vh 2.6vh ;
+  padding-bottom: .2vh;
+  margin: 0 0 2vh 3.7vh ;
+  float: left;
+  border-bottom: .2vh solid rgba(112,112,112, 0);
 }
 
 .menuvoice li:hover{
   cursor: pointer;
   list-style: none;
-  padding: 0 0 2vh 2.6vh ;
+  border-color: rgba(112,112,112, 1);
+}
+
+.menuvoice li:last-child{
+  margin-bottom: 1vh;
 }
 
 a{
+  transition: border-color .2s;
   position: absolute;
-  bottom: 4.9vh;
+  bottom: 0;
   text-decoration: none;
+  padding-bottom: .2vh;
+  border-bottom: .2vh solid rgba(112,112,112, 0);
+}
+
+a:hover{
+  border-color: rgba(112,112,112, 1);
 }
 
 #column2{
