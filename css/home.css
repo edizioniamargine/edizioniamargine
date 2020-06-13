@@ -72,27 +72,27 @@ h2:hover{
   border-color: rgba(112,112,112, 1);
 }
 
-.menuvoice li{
+.menuvoice a{
   transition: border-color .2s;
   cursor: pointer;
-  list-style: none;
+  text-decoration: none;
   padding-bottom: .2vh;
   margin: 0 0 2vh 3.7vh ;
   float: left;
   border-bottom: .2vh solid rgba(112,112,112, 0);
 }
 
-.menuvoice li:hover{
+.menuvoice a:hover{
   cursor: pointer;
   list-style: none;
   border-color: rgba(112,112,112, 1);
 }
 
-.menuvoice li:last-child{
+.menuvoice a:last-child{
   margin-bottom: 1vh;
 }
 
-a{
+#about{
   transition: border-color .2s;
   position: absolute;
   bottom: 0;
