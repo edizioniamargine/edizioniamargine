@@ -173,6 +173,7 @@ svg{
   stroke: #000;
   stroke-width: .2vh;
   stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* ------ /about ------ */
