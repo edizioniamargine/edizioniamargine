@@ -150,6 +150,6 @@ svg{
 .logo{
   fill:none;
   stroke: #000;
-  stroke-width: .2vh;
+  stroke-width: .25vh;
   stroke-linecap:round;
 }
