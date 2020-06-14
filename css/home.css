@@ -44,7 +44,7 @@ h1{
 
 .menuvoice{
   cursor: pointer;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
   max-height: 3.5vh;
   overflow: hidden;
   position: relative;
@@ -58,7 +58,7 @@ h2{
   transition: border-color .2s;
   font-family: "Mabry Pro";
   font-weight: normal;
-  margin-bottom: 3.8vh;
+  margin-bottom: 3.3vh;
   font-size: 2.6vh;
   cursor: pointer;
   float: left;
@@ -72,7 +72,7 @@ h2{
   cursor: pointer;
   text-decoration: none;
   padding-bottom: .2vh;
-  margin: 0 0 2vh 3.7vh ;
+  margin: 0 0 1.5vh 3.7vh ;
   float: left;
   border-bottom: .2vh solid rgba(0,0,0, 0);
 }
@@ -89,7 +89,7 @@ h2:hover{
 }
 
 .menuvoice a:last-child{
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
 }
 
 #about{
