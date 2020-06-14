@@ -7,7 +7,27 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/jquery-ui.min.js"></script>
   <script type="text/javascript" src='../js/menu.js'></script>
+  <script type="text/javascript" src="../js/turn.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+  <script type="text/javascript">
+  $(function() {
+
+    // attivo l'effetto
+    $('#foto').turn({
+      display: 'double',
+      duration: 400,
+      pages: 1000
+    });
+
+    // imposto la navigazione anche da tastiera
+    $(window).bind('keydown', function(e){
+      if (e.keyCode == 37) $('#foto').turn('previous');
+      else if (e.keyCode == 39) $('#foto').turn('next');
+    });
+
+  });
+  </script>
 
 </head>
 <body>
@@ -17,29 +37,29 @@
       <h2 class="clr">Siddharta</h2>
       <a style="border-bottom: .2vh solid rgba(112,112,112, 1);"
       class="clr">Giorgio</a>
-      <a href="pages/" class="clr">Chiara</a>
-      <a href="pages/" class="clr">Daniel</a>
-      <a href="pages/" class="clr">Emilia</a>
-      <a href="pages/" class="clr">Vittorio</a>
+      <a href=".html" class="clr">Chiara</a>
+      <a href=".html" class="clr">Daniel</a>
+      <a href=".html" class="clr">Emilia</a>
+      <a href=".html" class="clr">Vittorio</a>
     </div>
 
     <div onClick="myFunction(this)" class="menuvoice">
       <h2 class="clr">La Metamorfosi</h2>
-      <a href="pages/" class="clr">Luca - parte prima</a>
-      <a href="pages/" class="clr">Luca - parte seconda</a>
-      <a href="pages/" class="clr">Paul</a>
-      <a href="pages/" class="clr">Claudia</a>
-      <a href="pages/" class="clr">Caterina</a>
-      <a href="pages/" class="clr">Angela</a>
+      <a href=".html" class="clr">Luca - parte prima</a>
+      <a href=".html" class="clr">Luca - parte seconda</a>
+      <a href=".html" class="clr">Paul</a>
+      <a href=".html" class="clr">Claudia</a>
+      <a href=".html" class="clr">Caterina</a>
+      <a href=".html" class="clr">Angela</a>
 
     </div>
 
     <div onClick="myFunction(this)" class="menuvoice">
       <h2 class="clr">Il Giovane Holden</h2>
-      <a href="pages/" class="clr">Chiara</a>
-      <a href="pages/" class="clr">Martin</a>
-      <a href="pages/" class="clr">Emilia - parte prima</a>
-      <a href="pages/" class="clr">Emilia - parte seconda</a>
+      <a href=".html" class="clr">Chiara</a>
+      <a href=".html" class="clr">Martin</a>
+      <a href=".html" class="clr">Emilia - parte prima</a>
+      <a href=".html" class="clr">Emilia - parte seconda</a>
 
 
     </div>
@@ -47,6 +67,9 @@
     <a id="about" href="pages/about.html">About</a>
   </div>
   <div id="column2">
+
+
+
   </div>
 </body>
 </html>

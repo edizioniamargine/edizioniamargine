@@ -112,3 +112,18 @@ h2:hover{
   background-repeat: no-repeat;
   background-position: top left;
 }
+
+
+
+
+/* flipbook stuff */
+
+#foto {
+  background-color: red;
+   width: 95.83vh;
+   height: 73.18vh;
+ }
+ #foto .turn-page{
+   background-color: #CCCCCC;
+   background-size: 100% 100%;
+ }
