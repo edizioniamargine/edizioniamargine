@@ -2,7 +2,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  color: #707070;
+  color: #000;
   font-family: "Mabry Pro";
   font-size: 2.3vh;
 }
@@ -63,7 +63,7 @@ h2{
   cursor: pointer;
   float: left;
   padding-bottom: .2vh;
-  border-bottom: .2vh solid rgba(112,112,112, 0);
+  border-bottom: .2vh solid rgba(0,0,0, 0);
 }
 
 
@@ -74,7 +74,7 @@ h2{
   padding-bottom: .2vh;
   margin: 0 0 2vh 3.7vh ;
   float: left;
-  border-bottom: .2vh solid rgba(112,112,112, 0);
+  border-bottom: .2vh solid rgba(0,0,0, 0);
 }
 
 a{
@@ -83,8 +83,9 @@ a{
 
 #about:hover,
 .menuvoice a:hover,
+p a:hover,
 h2:hover{
-  border-color: rgba(112,112,112, 1);
+  border-color: rgba(0,0,0, 1);
 }
 
 .menuvoice a:last-child{
@@ -97,7 +98,7 @@ h2:hover{
   bottom: 0;
   text-decoration: none;
   padding-bottom: .2vh;
-  border-bottom: .2vh solid rgba(112,112,112, 0);
+  border-bottom: .2vh solid rgba(0,0,0, 0);
 }
 
 
@@ -111,7 +112,11 @@ h2:hover{
   background-position: top left;
 }
 
+
+/* ------ about ------ */
+
 #column2ab{
+  position: relative;
   margin-left: 30%;
   width: 70%;
   height: 73.18vh;
@@ -131,14 +136,30 @@ h2:hover{
 }
 
 .chiusino{
-  font-size: 2.3vh;
+  font-size: 2vh;
   line-height: 3.6vh;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  position: absolute;
+  bottom:0;
+  right:0
+}
+
+.chiusino a{
+  padding-left: .2vh;
+  border-left: .2vh solid rgba(0,0,0, 0);
 }
 
 .riportino{
   padding-left: 3.6vh;
   font-size: 2.6vh;
   line-height: 3.6vh;
+}
+
+.riportino a{
+  text-decoration: none;
+  padding-bottom: .2vh;
+  border-bottom: .2vh solid rgba(0,0,0, 1);
 }
 
 svg{
@@ -152,4 +173,36 @@ svg{
   stroke: #000;
   stroke-width: .25vh;
   stroke-linecap:round;
+}
+
+/* ------ /about ------ */
+/* ------ book ------ */
+
+#column2lib{
+  margin-left: 30%;
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+}
+
+.book{
+  position: relative;
+  height: 73.18vh;
+  width: 100%;
+  margin-bottom: 9.75vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+}
+
+.book:last-of-type{
+  margin-bottom: 0;
+}
+
+.book a{
+  position: absolute;
+
+  right: 0vw;
+  padding-bottom: .2vh;
+  border-bottom: .2vh solid rgba(0,0,0, 1);
 }
